@@ -1,0 +1,11 @@
+public boolean catDog(String str) {
+  int count = 0;
+  int count2 =0;
+  for (int x=0; x<str.length()-2; x++){
+    if (str.substring(x,x+3).equals("cat")) count++;
+  }
+  for (int z=0; z<str.length()-2; z++){
+    if (str.substring(z,z+3).equals("dog")) count2++;
+  }
+  return (count == count2);
+}
